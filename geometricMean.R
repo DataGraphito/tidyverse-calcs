@@ -4,6 +4,12 @@ geometricMean <- function(x){
 # For example, a principal of $100 that loses 10% on day one ($90) and then gains 10% on day 2 ($99) should not have an average daily return of 0% ((-10 + 10) / 2)
 # x must be a vector of rates (0.04 instead of 4(%))
   
+  if(every(x, is.na)){
+    
+    return(NA)
+    
+  }
+  
   if(!is.numeric(x)){
     
     stop("Vector must be numeric")
