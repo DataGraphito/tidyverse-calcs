@@ -1,6 +1,6 @@
-geometricMean <- function(x){
+geometricReturn <- function(x){
 
-# The geometric mean returns the "average" daily rate of compounding returns
+# The geometric (return) mean returns the "average" daily rate of compounding returns
 # For example, a principal of $100 that loses 10% on day one ($90) and then gains 10% on day 2 ($99) should not have an average daily return of 0% ((-10 + 10) / 2)
 # x must be a vector of rates (0.04 instead of 4(%))
   
